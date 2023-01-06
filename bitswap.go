@@ -161,7 +161,6 @@ func (bs *Bitswap) PeerConnected(p peer.ID) {
 }
 
 func (bs *Bitswap) PeerDisconnected(p peer.ID) {
-	fmt.Println(p)
 	bs.Client.PeerDisconnected(p)
 	bs.Server.PeerDisconnected(p)
 }
